@@ -8,7 +8,7 @@ node {
 
     // Stage 2: Build image
     stage('Build image') {
-        app = docker.build("raj80dockerid/test")
+        app = docker.build("kevinwynn/test")
     }
 
     // Stage 3: Test image
