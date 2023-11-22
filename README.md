@@ -1,7 +1,7 @@
 # Deployment with Jenkins GitOps GitHub Pipeline on Kubernetes
 
 ## Introduction:
-In this lab, I demonstrate the deployment to Kubernetes using the Jenkins GitOps GitHub Pipeline provided by Rajdeep (user saha-rajdeep) at AWS.
+With lab guidance provided by user saha-rajdeep (Solutions Architect at AWS), I deploy to Kubernetes with Jenkins GitOps GitHub Pipeline. 
 
 ## GitOps Flow:
 I have app.py and push the code to a GitHub repository named KubernetesCode. As soon as I push the code, a Jenkins job is triggered and builds the Docker container image. The Jenkins job's name is buildimage. Jenkins serves the image in a container registry (Docker Hub in this case), and the name of the container image is test:latest, which is the tag for the container image. Every time the code is changed, a new Docker image will be created with the updated tag.
